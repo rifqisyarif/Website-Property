@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #F3FAFC;
+    font-family: 'Poppins', sans-serif;
+    height: 1050px;
+}
+
+/* Navigation */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+nav .navigation1{
+    font-weight: 700;
+    padding: 25px 0 25px 90px;
+}
+
+nav .navigation1 h1 span{
+    color: #4775B3;
+}
+
+nav .navigation2{
+    font-weight: 400;
+}
+
+nav .navigation2 li{
+    display: flex;
+    list-style: none;
+    gap: 0 4rem;
+    margin-top: .3em;
+}
+
+nav .navigation2 li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav .navigation2 li a::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: black;
+    display: block;
+    margin: auto;
+    margin-top: 1px;
+    border-radius: 5px;
+}
+
+nav .navigation2 li a:hover::after{
+    width: 100%;
+    transition: .5s;
+}
+
+nav .navigation3{
+    padding: 25px 90px 25px 0;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    gap: 0 1.5rem;
+}
+
+nav .navigation3 .language{
+    display: flex;
+    align-items: center;
+    gap: 0 .5rem;
+}
+
+nav .navigation3 .language .flag{
+    width: 36px;
+    height: 26px;
+}
+
+nav .navigation3 .register{
+    width: 100px;
+    height: 36px;
+    background: #4775B3;
+    color: white;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Property Detail */
+
+.detail-wrapper{
+    padding: 120px 90px 40px 90px;
+    display: flex;
+    gap: 50px;
+}
+
+.detail-wrapper .detail1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.detail-wrapper .detail1 .image-section{
+    display: flex;
+    gap: 25px;
+}
+
+.detail-wrapper .detail1 .image-section .image-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.detail-wrapper .detail1 .image-section .image-detail img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.detail-wrapper .detail1 .image-section .image-detail img:hover{
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.25); 
+    transition: .5s;
+}
+
+.detail-wrapper .detail1 .image-section img{
+    width: 500px;
+    height: 230px;
+    object-fit: cover;
+}
+
+.description-section .property-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.description-section .property-detail .property-title{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.description-section .property-detail .property-title .property-title-icon img:nth-child(1){
+    width: 28px;
+    height: 28px;
+}
+
+.description-section .property-detail .property-title .property-title-icon img:nth-child(2){
+    width: 30px;
+    height: 30px;
+}
+
+.description-section .property-detail h2{
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.description-section .property-detail .property-location{
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.description-section .property-detail .property-price{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.detail2{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.detail2 .description-property{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 400px;
+    max-height: 300px;
+    height: 250px;
+    overflow-y: scroll;
+    background-color: white;
+    padding: 25px 30px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
+}
+
+.detail2 .description-property .property-type{
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    padding: 4px;
+    border-radius: 7px;
+    background: none;
+    border: 1px solid black;
+}
+
+.detail2 .description-property ul{
+    margin-left: 18px;
+
+}
+
+.detail2 .description-property ul li p{
+    font-size: 14px;
+}
+
+.detail2 .button-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.detail2 .button-section .contact{
+    width: 250px;
+    height: 40px;
+    background: #27AE60;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.detail2 .button-section .contact:hover{
+    transition: .5s;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.25);
+}
+
+.detail2 .button-section .contact img{
+    width: 25px;
+    height: 25px;
+}
+
+.detail2 .button-section .review{
+    width: 250px;
+    height: 40px;
+    background: #4775B3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.detail2 .button-section .review:hover{
+    transition: .5s;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* Recomended Property */
+
+.recomended-property{
+    padding: 20px 90px 40px 90px;
+}
+
+.property-wrapper{
+    padding: 0px 90px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    display: grid;
+}
+
+.property-wrapper a{
+    text-decoration: none;
+    color: black;
+}
+
+.property-wrapper .property1{
+    width: 250px;
+    height: 290px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.property-wrapper .property1:hover{
+    transition: .5s;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+.property-wrapper .property1 .description{
+    padding: 5px 10px;
+}
+
+.property-wrapper .property1 h3{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.property-wrapper .property1 h4{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.property-wrapper .property1 img{
+    width: 250px;
+    height: 160px;
+}
+
+.property-wrapper .property1 .location{
+    display: flex;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+.property-wrapper .property1 .location img{
+    width: 26px;
+    height: 26px;
+}
+
+.property-wrapper .property1 .location p{
+    font-size: 10px;
+    color: #B2B2B2;
+}

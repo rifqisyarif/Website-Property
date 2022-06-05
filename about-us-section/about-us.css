@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #F3FAFC;
+    font-family: 'Poppins', sans-serif;
+    height: 1500px;
+}
+
+/* Navigation */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+nav .navigation1{
+    font-weight: 700;
+    padding: 25px 0 25px 90px;
+}
+
+nav .navigation1 h1 span{
+    color: #4775B3;
+}
+
+nav .navigation2{
+    font-weight: 400;
+}
+
+nav .navigation2 li{
+    display: flex;
+    list-style: none;
+    gap: 0 4rem;
+    margin-top: .3em;
+}
+
+nav .navigation2 li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav .navigation2 li a::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: black;
+    display: block;
+    margin: auto;
+    margin-top: 1px;
+    border-radius: 5px;
+}
+
+nav .navigation2 li a:hover::after{
+    width: 100%;
+    transition: .5s;
+}
+
+nav .navigation3{
+    padding: 25px 90px 25px 0;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    gap: 0 1.5rem;
+}
+
+nav .navigation3 .language{
+    display: flex;
+    align-items: center;
+    gap: 0 .5rem;
+}
+
+nav .navigation3 .language .flag{
+    width: 36px;
+    height: 26px;
+}
+
+nav .navigation3 .register{
+    width: 100px;
+    height: 36px;
+    background: #4775B3;
+    color: white;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* About Us Section */
+
+.about-us1{
+    display: flex;
+    align-items: center;
+    padding: 120px 90px 40px 90px;
+    gap: 20px;
+}
+
+.about-us1 .property-image img{
+    width: 460px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.about-us1 .description{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-us1 .description h2{
+    font-weight: 600;
+    font-size: 34px;
+    color: #4775B3;
+}
+
+.about-us1 .description .testimony{
+    display: flex;
+    gap: 20px;
+}
+
+.about-us1 .description .testimony .person-image img{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border-radius: 25px;
+}
+
+.about-us1 .description .testimony .person-about{
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+}
+
+.about-us1 .description .testimony .person-about h4{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.about-us1 .description .testimony .person-about h5{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Testimonial */
+
+.testimonial{
+    height: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.testimonial h2{
+    font-weight: 600;
+    font-size: 34px;
+    color: #4775B3;
+}
+
+.testimonial .comment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+}
+
+.testimonial .comment .testimonial1{
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.testimonial .comment .person-about{
+    display: flex;
+    gap: 1.2em;
+}
+
+.testimonial .comment .person-about img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+/* Footer */
+
+.footer{
+    height: 300px;
+    background: #4775B3;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-wrapper{
+    height: 200px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4em;
+}
+
+.footer .website-name{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.footer .social-media{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.footer .social-media .social-media1{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1em;
+    width: 160px;
+}
+
+.footer .social-media .social-media1 .instagram{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .social-media .social-media1 .facebook{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .social-media .social-media1 .instagram img{
+    width: 35px;
+    height: 35px;
+}
+
+.footer .social-media .social-media1 .facebook img{
+    width: 30px;
+    height: 30px;
+}
+
+.footer .contact{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.footer .contact .contact1{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.footer .contact .contact1 .call-center{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.footer .contact .contact1 .call-center .phone-icon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer .contact .contact1 .call-center .phone-icon img{
+    width: 35px;
+    height: 35px;
+}
+
+.footer .contact .contact1 .call-center .call-center-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 300px;
+}
+
+.footer .contact .contact1 .gmail{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
